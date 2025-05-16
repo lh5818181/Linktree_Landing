@@ -6,13 +6,18 @@ export const BenefitsSection = styled.section`
 
   h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     h2 { font-size: 2.5rem; }
   }
 `;
+
+export const BenefitsTitle1 = styled.h3`
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  `
 
 export const BenefitsGrid = styled.div`
   display: grid;
@@ -37,12 +42,20 @@ export const BenefitIcon = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const BenefitTitle = styled.h3`
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+export const BenefitTitle2 = styled.h2`
+font-size: 2rem;
+  span {
+    color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const BenefitDesc = styled.p`
   color: ${({ theme }) => theme.colors.white}CC;
   font-size: 0.9rem;
+`;
+
+export const BenefitsSubtitle = styled.h3`
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  color: ${({ theme }) => theme.colors.white}CC;
 `;

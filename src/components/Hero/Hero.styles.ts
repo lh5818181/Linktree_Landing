@@ -16,7 +16,7 @@ export const HeroWrapper = styled.section`
     flex-direction: row;
     text-align: left;
     justify-content: space-between;
-    padding: 6rem 2rem;
+    padding: 2rem 8rem;
   }
 `;
 
@@ -27,10 +27,11 @@ export const HeroText = styled.div`
 
 export const HeroTitle = styled.h1`
   font-size: 2.5rem;
-  span { color: ${({ theme }) => theme.colors.primary}; }
+  span { color: ${({ theme }) => theme.colors.primary}; 
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 `;
 
@@ -68,6 +69,6 @@ export const HeroImage = styled.img`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     margin-top: 0;
-    width: 45%;
+    width: 40%;
   }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BenefitsSection, BenefitsGrid, BenefitCard, BenefitIcon, BenefitTitle, BenefitDesc } from './Benefits.styles';
+import { BenefitsSection, BenefitsGrid, BenefitCard, BenefitIcon, BenefitsTitle1, BenefitDesc, BenefitTitle2, BenefitsSubtitle } from './Benefits.styles';
 import { Grid, BarChart2, Eye } from 'lucide-react';
 
 const items = [
@@ -10,12 +10,17 @@ const items = [
 
 const Benefits: React.FC = () => (
   <BenefitsSection>
-    <h2>Por que um link único?</h2>
+    <BenefitTitle2>
+      Maximize Seu <span>Impacto Digital</span>
+    </BenefitTitle2>
+    <BenefitsSubtitle>
+      Descubra como nossa solução de link na bio pode impulsionar sua presença online.
+    </BenefitsSubtitle>
     <BenefitsGrid>
       {items.map((b, i) => (
         <BenefitCard key={i}>
           <BenefitIcon>{b.icon}</BenefitIcon>
-          <BenefitTitle>{b.title}</BenefitTitle>
+          <BenefitsTitle1>{b.title}</BenefitsTitle1>
           <BenefitDesc>{b.desc}</BenefitDesc>
         </BenefitCard>
       ))}

@@ -8,11 +8,11 @@ const Hero: React.FC = () => (
         Link na bio que <span>converte</span>.
       </HeroTitle>
       <HeroSubtitle>
-        Crie sua página profissional de links, com visual moderno, responsivo e feito sob medida para destacar seus serviços.
+       Transforme seu perfil do Instagram com uma página de links personalizada, profissional e otimizada para engajamento e apresentação de serviços.
       </HeroSubtitle>
       <HeroButton href="#price">Quero meu link profissional</HeroButton>
     </HeroText>
-    <HeroImage src="/assets/mockup-hero.png" alt="Mockup Link na Bio" />
+    <HeroImage src="./assets/Mockup-smartphone.png" alt="Mockup Link na Bio" />
   </HeroWrapper>
 );
 
