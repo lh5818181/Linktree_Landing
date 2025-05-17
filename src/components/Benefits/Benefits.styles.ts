@@ -38,8 +38,15 @@ export const BenefitCard = styled.div`
 `;
 
 export const BenefitIcon = styled.div`
-  color: ${({ theme }) => theme.colors.primary};
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 64%;  
+      height: 100%;
+      margin-bottom: 1rem;
+      border-radius: 16px;
+      }
 `;
 
 export const BenefitTitle2 = styled.h2`
