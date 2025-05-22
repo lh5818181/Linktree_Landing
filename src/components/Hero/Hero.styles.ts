@@ -6,11 +6,30 @@ const fadeUp = keyframes`
 `;
 
 export const HeroWrapper = styled.section`
+  position: relative;
+  background: url('../../../assets/image/NEBULOSA AZUL - 3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
   text-align: center;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* ajuste a opacidade conforme necessário */
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     flex-direction: row;
